@@ -70,6 +70,7 @@ $(function() {
          * hiding/showing of the menu element.
          */
 
+         //Test case to check the element is hidden by default
         describe('The menu', function(){
             it('test for checking the element is hidden by default', function(){
                 expect($('body').hasClass('menu-hidden')).toBe(true);
@@ -82,9 +83,9 @@ $(function() {
           */
 
           it('changing the visibility when user clicks', function(){
+              //Checking the item is hidden by default
                 $('.menu-icon-link').click();
-                expect($('body').hasClass('menu-hidden')).toBe(false);
-
+                expect($('body').hasClass('menu-hidden')).toBe(false); 
                 $('.menu-icon-link').click();
                 expect($('body').hasClass('menu-hidden')).toBe(true);
 
@@ -107,6 +108,7 @@ $(function() {
                 });
             });
 
+            //Checking that the feed container have an single entry in it
              it('a single entry is within the feed container', function(finish){
                 expect($('.feed .entry').length).toBeGreaterThan(0);
                 done();
@@ -133,6 +135,7 @@ $(function() {
                 });
             });
 
+            //Checking the new feeds are loaded into the container
             it('should load new feeds in the container', function(finish){
                 let newFeeds = $('.feed').html();
                 expect(newFeeds).not.toBe(initialFeed);
