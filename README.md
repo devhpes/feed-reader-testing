@@ -22,8 +22,8 @@ You will learn how to use Jasmine to write a number of tests against a pre-exist
 
 
 # How I completed this project?
-1. A test the loops to ensure that all feeds URL is defined and the URL field is not empty.
-2. A test the loops to ensure the all the feeds name is defined and the name field is not empty.
+1. A test case that loops to ensure that all feeds URL is defined and the URL field is not empty.
+2. A test case that loops to ensure the all the feeds name is defined and the name field is not empty.
 3. A test case to check that the menu is hidden by default and another test case to hide when users clicks on it.
 4. A test case to check and ensure that the loadFeed is complete and working with atleast single entry.
 5. A test case to ensure that the content actually changed when the new feeds are available.
