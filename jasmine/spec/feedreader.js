@@ -95,11 +95,12 @@ $(function() {
          */
 
          describe('Initial Entries', function(){
-             beforeEach(function(finish){
+
+             beforeEach(function(done){
                 loadFeed(0, function(){
-                    finish();
+                    done();
                 });
-             });
+            });
 
              it('a single entry is within the feed container', function(finish){
                 expect($('.feed .entry').length).toBeGreaterThan(0);
@@ -117,12 +118,12 @@ $(function() {
         describe('New Feed Selection', function(){
             let initialFeed;
 
-            beforeEach(function(finish){
+            beforeEach(function(done){
                 loadFeed(0, function(){
                     initialFeed = $('.feed').html();
 
                     loadFeed(1, function(){
-                        finish();
+                        done();
                     });
                 });
             });
@@ -133,4 +134,6 @@ $(function() {
                 finish();
             });
         });
+
+    });
 }());
