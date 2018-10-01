@@ -6,6 +6,12 @@ In this project you are given a web-based application that reads RSS feeds. The 
 
 Go here - https://devhpes.github.io/feed-reader-testing/
 
+## Running the project
+
+1. Clone the project by clicking on green button - Clone or download
+2. Extract it and open the index.html on your preferred browser.
+3. And, then you can see the test results on the screen.
+
 ## Why this Project?
 
 Testing is an important part of the development process and many organizations practice a standard of development known as "test-driven development". This is when developers write tests first, before they ever start developing their application. All the tests initially fail and then they start writing application code to make these tests pass.
