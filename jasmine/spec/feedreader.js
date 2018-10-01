@@ -114,4 +114,23 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+        describe('New Feed Selection', function(){
+            let initialFeed;
+
+            beforeEach(function(finish){
+                loadFeed(0, function(){
+                    initialFeed = $('.feed').html();
+
+                    loadFeed(1, function(){
+                        finish();
+                    });
+                });
+            });
+
+            it('should load new feeds in the container', function(finish){
+                let newFeeds = $('.feed').html();
+                expect(newFeeds).not.toBe(initialFeed);
+                finish();
+            });
+        });
 }());
