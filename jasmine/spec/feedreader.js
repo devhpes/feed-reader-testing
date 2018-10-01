@@ -104,7 +104,7 @@ $(function() {
 
              it('a single entry is within the feed container', function(finish){
                 expect($('.feed .entry').length).toBeGreaterThan(0);
-                finish();
+                done();
             });
 
         });
@@ -131,7 +131,7 @@ $(function() {
             it('should load new feeds in the container', function(finish){
                 let newFeeds = $('.feed').html();
                 expect(newFeeds).not.toBe(initialFeed);
-                finish();
+                done();
             });
         });
 
