@@ -101,9 +101,12 @@ $(function() {
                 });
              });
 
-             
+             it('a single entry is within the feed container', function(finish){
+                expect($('.feed .entry').length).toBeGreaterThan(0);
+                finish();
+            });
 
-         });
+        });
 
     /* TODO: Write a new test suite named "New Feed Selection" */
 
